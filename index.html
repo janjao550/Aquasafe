@@ -1,0 +1,76 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>AquaSafe</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+  <div class="topo">
+
+    <div>
+      <h1>AquaSafe</h1>
+      <p>Monitoramento Inteligente da Água</p>
+    </div>
+
+    <div class="wifi">
+      ● ONLINE
+    </div>
+
+  </div>
+
+  <div id="status" class="status boa">
+    ÁGUA BOA
+  </div>
+
+  <div class="cards">
+
+    <div class="card">
+      <span>pH</span>
+      <h2 id="ph">7.0</h2>
+    </div>
+
+    <div class="card">
+      <span>Turbidez</span>
+      <h2 id="turbidez">12 NTU</h2>
+    </div>
+
+    <div class="card">
+      <span>Temperatura</span>
+      <h2 id="temperatura">24°C</h2>
+    </div>
+
+    <div class="card">
+      <span>Nível</span>
+      <h2 id="nivel">80%</h2>
+    </div>
+
+  </div>
+
+  <div class="graficoBox">
+    <h3>Histórico do pH</h3>
+
+    <canvas id="graficoPH"></canvas>
+  </div>
+
+  <div class="alertas">
+
+    <h3>Alertas Recentes</h3>
+
+    <div id="listaAlertas"></div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
